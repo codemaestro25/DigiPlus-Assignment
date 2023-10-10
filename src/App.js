@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import AddNodes from './components/addNodes';
+import { Box, styled} from '@mui/material';
+import SelectNode from './components/selectNode';
+import DisplayNodes from './components/displayNodes';
+
+
+const Parent = styled(Box)`
+display : flex;
+`
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Parent>
+
+<AddNodes />
+<SelectNode />
+   </Parent>
+
+   <DisplayNodes />
+   </>
   );
 }
 
