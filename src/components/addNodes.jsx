@@ -18,6 +18,9 @@ const AddNodes = () => {
     const handleChange = (e) => {
         setNodeType(e.target.value);
     }
+    const submitValues = () =>{
+            
+    }
     return (
         <Container>
             <Typography>Select Node Type</Typography>
@@ -36,7 +39,7 @@ const AddNodes = () => {
             <Typography>Select Node Value</Typography>
             <TextField id="filled-basic" label="Name for Node" variant="filled" value={nodeVal} />
 
-            <Button variant='contained' onClick={console.log(nodeType, nodeVal)}>Add Node</Button>
+            <Button variant='contained' onClick={submitValues}>Add Node</Button>
         </Container>
     )
 }
